@@ -1,0 +1,15 @@
+HW: UPDATE GET /api/tags/:tagName/posts curl http://localhost:3001/api -H
+'Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbGJlcnQiLCJpYXQiOjE2NjQ1MDEzODQsImV4cCI6MTY2NDUxOTM4NH0.1kn9qBxb493VtgwqjAdNmA9Mctrpyx_bS45Vjycelfo'
+curl http://localhost:3001/api/posts -X POST -H 'Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbGJlcnQiLCJpYXQiOjE2NjQ2MzQ5NDAsImV4cCI6MTY2NDY1Mjk0MH0.h-jrpf8Bk78iJ215uXpcaauxzdeNJKEDv3yYlQNZwIo'
+curl http://localhost:3001/api/posts -X POST -H 'Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbGJlcnQiLCJpYXQiOjE2NjQ2MzUyMzQsImV4cCI6MTY2NDY1MzIzNH0.pHXGEP7LSK-Tj0REZfHTIrLbJpFO5ldypgDR-qeabGw'
+-H 'Content-Type: application/json' -d '{"title": "test post", "content": "how
+is this?", "tags": " #once #twice #happy"}' curl
+http://localhost:3001/api/posts/1 -X PATCH -H 'Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbGJlcnQiLCJpYXQiOjE2NjQ2MzUyMzQsImV4cCI6MTY2NDY1MzIzNH0.pHXGEP7LSK-Tj0REZfHTIrLbJpFO5ldypgDR-qeabGw'
+-H 'Content-Type: application/json' -d '{"title": "updating my old stuff",
+"tags": "#oldisnewagain"}' curl http://localhost:3001/api/posts/1 -X DELETE -H
+'Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbGJlcnQiLCJpYXQiOjE2NjQ2MzUyMzQsImV4cCI6MTY2NDY1MzIzNH0.pHXGEP7LSK-Tj0REZfHTIrLbJpFO5ldypgDR-qeabGw'
